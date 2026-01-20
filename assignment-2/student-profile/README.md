@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Student Profile Web Page
+## Student Profile Web Page
 
 This repository contains the solution for **Lab Assignment – 02**, which focuses on creating a structured web page using **HTML5 semantic elements** and applying styles using **basic CSS selectors** only.
 
@@ -17,7 +17,7 @@ Advanced CSS techniques and scripting languages are strictly avoided as per lab 
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 By completing this lab assignment, the following objectives are achieved:
 
@@ -29,7 +29,7 @@ By completing this lab assignment, the following objectives are achieved:
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - **HTML5**
 - **CSS3 (Selectors only)**
@@ -38,17 +38,18 @@ By completing this lab assignment, the following objectives are achieved:
 
 ---
 
-## 📁 Project Folder Structure
+## Project Folder Structure
 
 student-profile/
-│── index.html
+│─
+─ index.html
 │── style.css
 │── README.md
 
 
 ---
 
-## 🧩 Implementation Details
+## Implementation Details
 
 ### HTML Structure
 The webpage includes the following sections:
@@ -75,7 +76,7 @@ All styling is done using an **external CSS file** (`style.css`) and includes:
 
 ---
 
-## 🔍 Inspection and Analysis
+## Inspection and Analysis
 
 Using the browser’s developer tools:
 - An element styled using a **class selector** was identified and documented
@@ -85,7 +86,7 @@ These are clearly mentioned as **HTML comments** inside the `index.html` file.
 
 ---
 
-## ⚠️ Constraints Followed
+## Constraints Followed
 
 ✔ No inline CSS  
 ✔ No internal `<style>` tags  
@@ -94,7 +95,7 @@ These are clearly mentioned as **HTML comments** inside the `index.html` file.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 Screenshots of the completed webpage and inspection task are included below:
 
@@ -109,7 +110,7 @@ Screenshots of the completed webpage and inspection task are included below:
 
 ---
 
-## ✅ Evaluation Criteria Coverage
+## Evaluation Criteria Coverage
 
 - HTML Structure and Semantics ✔  
 - CSS Selector Usage ✔  
@@ -118,14 +119,14 @@ Screenshots of the completed webpage and inspection task are included below:
 
 ---
 
-## 📜 Academic Integrity
+## Academic Integrity
 
 This project is an **original work** created solely for academic purposes.  
 No external templates or copied code have been used.
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This lab assignment strengthened the understanding of HTML structure and CSS selector usage, forming a solid foundation for advanced web styling techniques in future labs.
 
