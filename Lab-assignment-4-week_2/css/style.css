@@ -1,0 +1,171 @@
+/* GLOBAL STYLES */
+:root {
+    --primary: #2563eb;
+    --secondary: #1e293b;
+    --accent: #38bdf8;
+    --light: #f8fafc;
+    --dark: #0f172a;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* 1. FLEXBOX: Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--secondary);
+    color: white;
+    position: sticky; /* POSITIONING: Sticky */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition); /* TRANSITION */
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* 2. ANIMATIONS: Keyframes */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 3. GRID: Dashboard Layout */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar and Content */
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: var(--dark);
+    color: white;
+    padding: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: slideIn 0.5s ease-out; /* ANIMATION */
+    position: relative; /* POSITIONING */
+}
+
+.badge {
+    position: absolute; /* POSITIONING: Absolute */
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* 4. DATA MANAGEMENT: Table */
+.table-container {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* 5. MEDIA QUERIES (Responsiveness) */
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr; /* Stack sidebar on mobile */
+    }
+    
+    .sidebar {
+        display: none; /* Hide sidebar on mobile for simplicity */
+    }
+    
+    .nav-links {
+        display: none; /* In a real app, use a hamburger menu */
+    }
+}
+
+/* LOGIN FORM (Flexbox Centering) */
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.login-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: var(--dark);
+    animation: pulse 1s infinite;
+}
